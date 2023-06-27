@@ -2,7 +2,32 @@
 <html>
 <head>
   <title>The Joker</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3669910370026565" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <script>
+    function showSection(sectionId) {
+      // JavaScript function here
+    }
+    
+    function signUp() {
+      // Add a new function for sign up
+      var username = document.getElementById('signup-username').value;
+      var password = document.getElementById('signup-password').value;
+      var confirmPassword = document.getElementById('signup-confirm-password').value;
+      
+      if (password !== confirmPassword) {
+        alert("Password and confirm password do not match!");
+        return;
+      }
+      
+      // Perform sign up logic here
+      
+      // Show success message
+      alert("Sign up successful!");
+    }
+  </script>
+	
   <style>
     @media (min-width: 768px) {
       h1 {
@@ -210,7 +235,7 @@
 </head>
 <body>
   <div id="header">
-    <h1>The Jokesssr</h1>
+    <h1>The Joker</h1>
     <div id="menu">
       <ul>
         <li><a href="#" onclick="showSection('home-section')"><i class="fas fa-home"></i>Home</a></li>
@@ -322,6 +347,11 @@
       <button>Sign Up</button>
     </div>
   </div>
+
+<script>
+    // Show the home section by default
+    showSection('home-section');
+  </script>
 
 
 
